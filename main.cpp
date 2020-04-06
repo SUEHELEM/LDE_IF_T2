@@ -34,6 +34,7 @@ public:
     Nodo *Obtieneant();
     int Obtienedato();
 };
+
 class LDE
 {    private:
     Nodo *Inicio, *Fin;
@@ -91,7 +92,36 @@ int Nodo::Obtienedato()
     return(this->dato);
 }
 
+void LDE::InsertarI(int E)
+{
+    if(!Inicio)
+    {
+        Inicio=new Nodo(E)
+        Fin=Inicio
+    }
+    else
+    {
+        Nodo *Yapongame10=new Nodo(E);
+            Yapongame10->Asignasig(Inicio);
+        Inicio->Asignaant(Yapongame10);
+        Inicio=Yapongame10;
+    }
+}
 
+void LDE::InsertarF(int E)
+{
+    if(!Inicio)
+    {
+        Inicio=new Nodo(E)
+    }
+    else
+    {
+        Nodo *SoyEim=Inicio;
+        Fin->Asignasig(SoyEimi);
+        SoyEimi->Asignaant(Fin);
+        Fin=SoyEimi;
+    }
+}
 
 
 
